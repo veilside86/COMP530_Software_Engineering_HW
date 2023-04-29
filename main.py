@@ -27,7 +27,8 @@ def calculate_total(state: str, records: list) -> float:
         try:
             if price < 0 or price == 0 or price > sys.maxsize:
                 raise ValueError("Incorrect price")
-        except ValueError:
+        except ValueError as e:
+            print(e)
             return None
 
         match state:

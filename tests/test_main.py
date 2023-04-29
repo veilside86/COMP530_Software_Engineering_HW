@@ -82,3 +82,12 @@ def test_default_tax_rate_items():
     assert calculate_total('NJ', records) == 690.57
     assert calculate_total('PA', records) == 686.97
     assert calculate_total('DE', records) == 650.97
+
+
+def test_maxint():
+    records = [
+        {'name': 'Blank Check', 'price': sys.maxsize+1, 'type': 'Bank Check'},
+    ]
+    assert calculate_total('NJ', records) is None
+    assert calculate_total('PA', records) is None
+    assert calculate_total('DE', records) is None
