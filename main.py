@@ -48,14 +48,17 @@ def calculate_total(state: str, records: list) -> float:
                         total = round(total + price, 2)
                 else:
                     total = round(total + price * tax_rates[state], 2)
-                    
+   
     return total
 
 
 if __name__ == '__main__':
     records = [
-        {'name': 'Fox Fur Coat', 'price': 1984.99, 'type': 'Clothing'},
+        {'name': 'Apples', 'price': 1.99, 'type': 'Wic Eligible food'},
+        {'name': 'Book', 'price': 9.99, 'type': 'Everything else'},
+        {'name': 'Fox Fur Coat', 'price': 684.99, 'type': 'Clothing'},
         {'name': 'Tuttle Neck Sweater', 'price': 39.99, 'type': 'Clothing'},
+        {'name': 'laptop', 'price': 1299.99, 'type': 'Electronic'},
     ]
 
     print(calculate_total('NJ', records))
