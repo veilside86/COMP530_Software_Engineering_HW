@@ -16,3 +16,4 @@
 + In python, float values' summation is not correct like 0.1 + 0.2 = 0.30000000000000004
   So using round function to handle this
 + After calculate all the items in record, return the total
++ When catch incorrect value in records, raises valueerror
