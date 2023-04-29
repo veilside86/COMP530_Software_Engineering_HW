@@ -1,5 +1,6 @@
 # software_homework
 ## To run code
++ using python3.10
 + pip install -r requirements.txt
 + run in main.py
 
