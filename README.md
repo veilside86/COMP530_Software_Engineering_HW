@@ -7,3 +7,11 @@
 ## Test the function working
 + under if __name__== '__main__':
 + change the records data to test other values.
+
+## Production function
+### calculate_total
++ This function get state letters and records
++ By item type and state, accept different tax rate.
++ In python, float values' summation is not correct like 0.1 + 0.2 = 0.30000000000000004
+  So using round function to handle this
++ After calculate all the items in record, return the total
